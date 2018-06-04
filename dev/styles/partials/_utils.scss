@@ -1,0 +1,84 @@
+$black: #121F27;
+$white: #EFF9F9;
+$grey: #BEC1C4;
+$accent: #EEC643;
+
+html {
+  font-size: 62.5%; 
+  body {
+      font-family: 'Source Sans Pro', sans-serif;
+      color: $black;
+      background: $white;
+      line-height: 1.6;
+  }
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1920px; 
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  border: 0;
+  padding: 0;
+  margin: -0.1rem;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; 
+}
+
+.skip-link {
+  color: #000;
+  background: #FFF;
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999; 
+}
+
+.skip-link:focus {
+  left: 0; 
+}
+
+// TRIANGLE TRIM STYLES
+.poly {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.trim1 {
+    bottom: -11%;
+}
+.topTrim svg {
+    fill: $white;
+}
+.trim2 {
+    bottom: -1.4%;
+}
+.middleTrim svg {
+    fill: $grey;
+}
+.trim3 {
+     bottom: -0.28%;
+}
+.bottomTrim svg {
+    fill: $white;
+}
+
+
+//MEDIA QUERIES
+
+@media (max-width: 500px) {
+  .trim1 {
+      bottom: 19%;
+  }
+}
+
+

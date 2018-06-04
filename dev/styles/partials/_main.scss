@@ -1,0 +1,260 @@
+// GLOBAL STYLES FOR MAIN SECTION
+.title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(1rem + 1vw);
+    text-transform: uppercase;
+    position: relative;
+}
+.title::after {
+    content: '';
+    border-bottom: 2px solid $black;
+    height: 2px;
+    width: calc(30% + 100px);
+    position: absolute;
+    bottom: -1rem;
+    z-index: 1; 
+}
+.title::before {
+    content: '';
+    border-bottom: 7px solid $black;
+    height: 2px;
+    width: calc(15% + 25px);
+    position: absolute;
+    bottom: -1.2rem;
+    z-index: 1; 
+}
+
+.socialLinks ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 30%;
+    a {
+        font-size: calc(1rem + 1vw);
+        text-decoration: none;
+        color: $black;
+        transition: color 0.5s ease;
+    }
+    a:hover {
+        color: $accent;
+    } 
+}
+
+// Top hero section
+.heroSection {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    height: 110vh;
+    background: $black;
+    color: $white;
+    width: 100%;
+    .wrapper {
+        padding-top: 10rem;  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;        
+        h1 {
+            font-size: calc(3rem + 1vw);
+            margin: 0;
+        }
+        h3 {
+            font-size: calc(1rem + 1vw);
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+        .heroText {
+            width: 50%;
+        }
+        .heroImage {
+            width: 50%;
+            margin: 0;
+            img {
+                overflow:hidden;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+}
+
+// About Me section styles
+.aboutMe {
+    padding: 8rem 0 0 0;
+    .title {
+        margin-bottom: 5rem;
+        margin-left: 7.5%;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .headshot {
+            width: 30%;
+            position: relative;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+        .headshot::before {
+            content: '';
+            position: absolute;
+            left: 8%;
+            bottom: -8%;
+            height: 100%;
+            width: 100%;
+            border: 2px solid $black;
+            z-index: -1;
+        }
+        .bio {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            text-align: justify;
+            h2 {
+                margin: 0;
+            }
+            p {
+                margin: 0.5rem 0;
+                font-size: calc(0.5rem + 1vw);
+            }
+        }
+    }
+}
+
+// Skills section styles
+.skills {
+    display: flex;  
+    padding: 8rem 0 15rem 0;
+    position: relative;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .vertical {
+            position: relative;
+            transform: rotate(270deg); 
+            margin-left: -6%;
+            h2 {
+                margin: 0;
+            }
+        }
+        ul.toolbox {
+            padding:  0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            width: 100%;
+            svg {
+                width: 50px;
+                height: 50px;
+            }
+            li {
+                font-size: calc(4rem + 1vw);
+            }
+        }
+    }
+}
+
+//Portfolio section skills
+.portfolio {
+    background: $grey;
+    position: relative;
+    padding: 8rem 0 15rem 0;
+    .gallery {
+        ul {
+            list-style: none;
+            padding: 2rem 0;
+            li.project {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5rem;  
+            }
+            .info {
+                color: $white;
+                background: $black;
+                padding: 2rem;
+                width: 48%;
+            }
+            .mockup {
+                width: 50%;
+                display: flex;
+                justify-content: flex-start;
+                img {
+                    height: 100%;
+                    width: 100%; 
+                    object-fit: cover;   
+                    display: block;
+                    transition: transform 1s ease;                   
+                }
+                img:hover {
+                    transform: scale(1.4);
+                    z-index: 1;
+                }
+            }
+            .writeup {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                h4.projectTitle {
+                    font-family: 'Josefin Sans';
+                    color: $accent;
+                    font-size: calc(1rem + 1vw);
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+                p {
+                    font-size: calc(0.5rem + 1vw);
+                    margin: 0;
+                }
+                ul.tools.proj1 {
+                    grid-template-columns: repeat(5, 1fr);
+                }
+                ul.tools.proj5 {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                ul.tools {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-gap: 0.5rem 2%;
+                    margin: 0.5rem 0;
+                    width: 90%;
+                    padding: 0;
+                    li {
+                        font-size: calc(0.3rem + 1vw);
+                        color: $black;
+                        background-color: $grey;
+                        padding: 0.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+            .links {
+                font-size: calc(0.5rem + 1vw);
+                margin: 1rem 0;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $white;
+                    border: 2px solid $accent;
+                    padding: 0.5rem 1rem;
+                    transition: all 0.5s ease;
+                }
+                a:hover {
+                    color: $black;
+                    background: $accent;
+                }
+            }
+        }
+        .projectText1, .projectText3, .projectText5 {            align-items: flex-end;
+        }
+    }
+}
