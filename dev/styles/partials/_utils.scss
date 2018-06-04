@@ -54,7 +54,8 @@ html {
   overflow: hidden;
 }
 .trim1 {
-    bottom: -11%;
+    bottom: -0.9%;
+    // border: 1px solid red;
 }
 .topTrim svg {
     fill: $white;
@@ -74,11 +75,42 @@ html {
 
 
 //MEDIA QUERIES
-
-@media (max-width: 500px) {
+@media (max-height: 540px) {
   .trim1 {
-      bottom: 19%;
+    bottom: -1%;
   }
 }
+@media (max-height: 500px){
+    .trim1 {
+      bottom: -1.2%;
+  }
+}
+@media (max-height: 430px){
+    .trim1 {
+      bottom: -1.5%;
+  }
+}
+@media (max-height: 340px){
+    .trim1 {
+      bottom: -1.8%;
+  }
+}
+@media (max-height: 285px){
+    .trim1 {
+      bottom: -2%;
+  }
+}
+
+@media (max-height: 245px) {
+      .trim1 {
+        bottom: -2.2%;
+  }
+}
+@media (max-width: 500px) {
+  .trim1 {
+      bottom: -1.4%;
+  }
+}
+
 
 
