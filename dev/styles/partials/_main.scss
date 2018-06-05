@@ -102,7 +102,7 @@ section .aboutMe {
 
     .title {
         margin-bottom: 5rem;
-        margin-left: 7.5%;
+        // width:
     }
     .wrapper {
         display: flex;
@@ -111,6 +111,7 @@ section .aboutMe {
         .headshot {
             width: 30%;
             position: relative;
+            z-index: 1;
             img {
                 height: 100%;
                 width: 100%;

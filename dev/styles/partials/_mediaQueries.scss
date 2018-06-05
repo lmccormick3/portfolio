@@ -369,6 +369,21 @@
 
 /////////FOOTER MEDIA QUERIES START////////
 //MEDIA QUERIES 
+@media (min-width: 1280px) {
+       footer {
+        .bottomBar {
+            .wrapper {
+                .homeArrow {
+                    width: 65px;
+                    a {   
+                        padding: 14px 12px 10px 12px;
+                    }
+                }
+            }
+        }
+    }
+} 
+
 @media (max-width: 600px) {
     footer {
         .footerContent {
@@ -407,7 +422,7 @@
                     width: 10%;
                 }
                 .homeArrow {
-                    right: calc(50% - 12px);
+                    // right: calc(50% - 12px);
                     a {   
                         padding: 14px 12px 10px 12px;
                     }
@@ -454,7 +469,7 @@
                     width: 10%;
                 }
                 .homeArrow {
-                    right: calc(50% - 12px);
+                    // width: 
                     a {   
                         padding: 14px 12px 10px 12px;
                     }
