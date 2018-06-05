@@ -78,8 +78,7 @@
             z-index: 0;
             position: absolute;
             bottom: 0;
-            right: 0;
-            // background-image: url(../../public/styles/assets/portfolioHeadshot5.png);
+            right: 0; 
             img {
                 overflow:hidden;
                 height: 100%;
@@ -97,12 +96,15 @@ section .aboutMe {
     display: block;
     z-index: 10;
 }
+.textWrapper {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1280px; 
+}
 .aboutMe {
     padding: 8rem 0 0 0;
-
     .title {
         margin-bottom: 5rem;
-        // width:
     }
     .wrapper {
         display: flex;
@@ -141,6 +143,9 @@ section .aboutMe {
                 margin: 0.5rem 0;
                 font-size: calc(0.5rem + 1vw);
             }
+            span {
+                background: $accent;
+            }
         }
     }
 }
@@ -171,10 +176,58 @@ section .aboutMe {
             svg {
                 width: 50px;
                 height: 50px;
+                fill: #121F27;
+                transition: fill 0.5s ease;
             }
             li {
                 font-size: calc(4rem + 1vw);
+                i {
+                    transition: color 0.5s ease;
+                }
+                i.devicon-html5-plain:hover {
+                    color: #E24E30;
+                }
+                i.devicon-css3-plain:hover {
+                    color: #1874B6;
+                }
+                i.devicon-javascript-plain:hover {
+                    color: #F9DD3A
+                }
+                i.devicon-jquery-plain:hover {
+                    color: #1469A9;
+                }
+                i.devicon-react-original:hover {
+                    color: #4ECEEC;
+                }
+                i.devicon-sass-original:hover {
+                    color: #CD669A;
+                }
+                i.devicon-gulp-plain:hover {
+                    color: #E94C4F;
+                }
+                i.devicon-github-plain:hover {
+                    color: #171515;
+                }
+                svg:hover {
+                    fill:#FEC93F;
+                }
+                i.devicon-visualstudio-plain:hover {
+                    color: #1E7EC6;
+                }
+                i.fab.fa-codepen:hover {
+                    color: #303C42;
+                }
+                i.devicon-git-plain:hover {
+                    color:#ED513B;
+                }
+                i.devicon-photoshop-plain:hover {
+                    color: #24CFF9;
+                }
+                i.devicon-illustrator-plain:hover {
+                    color: #FD7C23;
+                }
             }
+
         }
     }
 }

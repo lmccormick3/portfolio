@@ -46,6 +46,18 @@ html {
   left: 0; 
 }
 
+.come-in {
+  transform: translateY(250px);
+  animation: come-in 1s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.5s;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
 // TRIANGLE TRIM STYLES
 .poly {
   position: absolute;
