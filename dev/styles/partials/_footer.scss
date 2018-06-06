@@ -10,12 +10,8 @@ footer {
             width: 40%;
             display: flex;
             flex-direction: column;
-            // align-items: space-between;
-            ul.contactInfo {
-                list-style: none;
-                padding: 0;
-                li {
-                    font-size: calc(0.7rem + 1vw);
+                .contactInfo {
+                    font-size: calc(1rem + 1vw);
                     display: flex;
                     align-items: center;
                     a {
@@ -33,7 +29,7 @@ footer {
                         margin: 1rem 0 1rem 1rem;
                     }
                 }
-                .socialLinks.bottomSocial ul {
+                .socialLinks ul {
                     margin-top: 1rem;
                     width: 50%;
                 }
@@ -136,4 +132,4 @@ footer {
             }
         }
     }
-}
+

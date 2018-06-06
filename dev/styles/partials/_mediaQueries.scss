@@ -81,7 +81,6 @@
                 z-index: 2;
             }       
             .heroImage {
-                // bottom: 20%;
                 width: 400px;
                 left: calc(50% - 200px);  
                 overflow: hidden;           
@@ -97,8 +96,8 @@
                 bottom: 5%;
             }        
             .heroImage {
-                width: 350px;
                 left: calc(50% - 175px); 
+                width: 350px;
             }
         }
     }
@@ -107,8 +106,8 @@
     .heroSection {
         .wrapper {       
             .heroImage {
-                width: 300px;
                 left: calc(50% - 150px);              
+                width: 300px;
             }
         }
     }
@@ -131,66 +130,44 @@
             }
             .bio {
                 width: 65%;
-                position: relative;
-            }
-            .topSocial ul {
-                position: absolute;
-                right: -45%;
-                bottom: 15%;
             }
         }
     }
 }
+@media (max-width: 710px) {
+    .aboutMe {
+        padding: 8rem 0 0rem 0;
+        .title {
+            margin-bottom: 3rem;
+        }
+        .wrapper {
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            .headshot {
+                width: 30%;
+                position: relative;
+            }
+            .bio {
+                width: 65%;
+                position: relative;
+            }
+        }
+    }
+}
+
 @media (max-width: 650px) {
     .aboutMe {
         .wrapper {
-            .topSocial ul {
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0;
-                width: 30%;
-                height: 40%;
-                bottom: 10%;
-                a {
-                    font-size: calc(1.5rem + 1vw);
-                    text-decoration: none;
-                    color: $black;
-                    transition: color 0.5s ease;
-                }
-                a:hover {
-                    color: $accent;
-                } 
-            }
             .bio {
                 p {
                     margin: 0.5rem 0;
-                    font-size: calc(0.7rem + 1vw);
+                    font-size: calc(0.8rem + 1vw);
                 }
             }
         }
     }
 }
-@media (max-width: 500px) {
-    .aboutMe {
-        .wrapper {
-            .topSocial ul {
-                bottom: 15%;
-            }
-        }
-    }
-}
-@media (max-width: 400px) {
-    .aboutMe {
-        .wrapper {
-            .topSocial ul {
-                bottom: 25%;
-            }
-        }
-    }
-}
+
 // About Me Section Media Queries end
 
 // Skills Section Media Queries start
@@ -215,7 +192,7 @@
 }
 @media (max-width: 500px) {
     .skills { 
-        padding: 2rem 0 8rem 0;
+        padding: 4rem 0 8rem 0;
         .wrapper {
             .vertical {
                 margin-left: -13%;
@@ -405,7 +382,7 @@
                             margin: 1rem 0 1rem 0.2rem;
                         }
                     }
-                    .socialLinks.bottomSocial ul {
+                    .socialLinks ul {
                         margin-top: 1rem;
                         width: 100%;
                     }
@@ -451,7 +428,7 @@
                             margin: 1rem 0 1rem 0.2rem;
                         }
                     }
-                    .socialLinks.bottomSocial ul {
+                    .socialLinks ul {
                         margin-top: 1rem;
                         width: 50%;
                     }
