@@ -8,8 +8,8 @@
 .title::after {
     content: '';
     border-bottom: 2px solid $black;
-    height: 2px;
     width: calc(30% + 100px);
+    height: 2px;
     position: absolute;
     bottom: -1rem;
     z-index: 1; 
@@ -17,19 +17,19 @@
 .title::before {
     content: '';
     border-bottom: 7px solid $black;
-    height: 2px;
     width: calc(15% + 25px);
+    height: 2px;
     position: absolute;
     bottom: -1.2rem;
     z-index: 1; 
 }
 
 .socialLinks ul {
+    width: 30%;
+    padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    width: 30%;
     a {
         font-size: calc(1.5rem + 1vw);
         text-decoration: none;
@@ -45,11 +45,11 @@
 .heroSection {
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
+    color: $white;
+    background: $black;
+    width: 100%;
     height: 110vh;
     position: relative;
-    background: $black;
-    color: $white;
-    width: 100%;
     .wrapper {
         padding-top: 10rem;  
         display: flex;
@@ -99,8 +99,8 @@ section .aboutMe {
 }
 .textWrapper {
   width: 85%;
-  margin: 0 auto;
   max-width: 1280px; 
+  margin: 0 auto;
 }
 .aboutMe {
     padding: 8rem 0 0 0;
@@ -116,27 +116,27 @@ section .aboutMe {
             position: relative;
             z-index: 1;
             img {
-                height: 100%;
                 width: 100%;
+                height: 100%;
                 object-fit: cover;
                 display: block;
             }
         }
         .headshot::before {
             content: '';
+            border: 2px solid $black;
+            width: 100%;
+            height: 100%;
             position: absolute;
             left: 8%;
             bottom: -8%;
-            height: 100%;
-            width: 100%;
-            border: 2px solid $black;
             z-index: -1;
         }
         .bio {
+            text-align: justify;
+            width: 60%;
             display: flex;
             flex-direction: column;
-            width: 60%;
-            text-align: justify;
             h2 {
                 margin: 0;
             }
@@ -147,8 +147,8 @@ section .aboutMe {
             span {
                 background: $accent;
                 a {
-                    color: $black;
                     text-decoration: none;
+                    color: $black;
                     transition: all 0.5s ease;
                 }
                 a:hover {
@@ -162,31 +162,31 @@ section .aboutMe {
 
 // Skills section styles
 .skills {
-    display: flex;  
     padding: 8rem 0 15rem 0;
+    display: flex;  
     position: relative;
     .wrapper {
         display: flex;
         align-items: center;
         justify-content: flex-start;
         .vertical {
-            position: relative;
             transform: rotate(270deg); 
             margin-left: -6%;
+            position: relative;
             h2 {
                 margin: 0;
             }
         }
         ul.toolbox {
-            padding:  0;
             list-style: none;
+            width: 100%;
+            padding:  0;
             display: grid;
             grid-template-columns: repeat(7, 1fr);
-            width: 100%;
             svg {
+                fill: #121F27;
                 width: 50px;
                 height: 50px;
-                fill: #121F27;
                 transition: fill 0.5s ease;
             }
             li {
@@ -245,22 +245,22 @@ section .aboutMe {
 //Portfolio section skills
 .portfolio {
     background: $grey;
-    position: relative;
     padding: 8rem 0 15rem 0;
+    position: relative;
     .gallery {
         ul {
             list-style: none;
             padding: 2rem 0;
             li.project {
+                margin-bottom: 5rem;  
                 display: flex;
                 justify-content: space-between;
-                margin-bottom: 5rem;  
             }
             .info {
                 color: $white;
                 background: $black;
-                padding: 2rem;
                 width: 48%;
+                padding: 2rem;
             }
             .mockup {
                 width: 50%;
@@ -285,9 +285,9 @@ section .aboutMe {
                 justify-content: space-around;
                 h4.projectTitle {
                     font-family: 'Josefin Sans';
-                    color: $accent;
                     font-size: calc(1rem + 1vw);
                     text-transform: uppercase;
+                    color: $accent;
                     margin: 0;
                 }
                 p {
@@ -301,18 +301,18 @@ section .aboutMe {
                     grid-template-columns: repeat(3, 1fr);
                 }
                 ul.tools {
+                    width: 90%;
+                    padding: 0;
+                    margin: 0.5rem 0;
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
                     grid-gap: 0.5rem 2%;
-                    margin: 0.5rem 0;
-                    width: 90%;
-                    padding: 0;
                     li {
                         font-size: calc(0.3rem + 1vw);
+                        text-align: center;
                         color: $black;
                         background-color: $grey;
                         padding: 0.5rem;
-                        text-align: center;
                     }
                 }
             }

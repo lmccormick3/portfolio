@@ -10,126 +10,127 @@ footer {
             width: 40%;
             display: flex;
             flex-direction: column;
-                .contactInfo {
-                    font-size: calc(1rem + 1vw);
-                    display: flex;
-                    align-items: center;
-                    a {
-                        color: black;
-                        text-decoration: none;
-                        transition: color 0.5s ease;
-                    }
-                    a:hover {
-                        color: $accent;
-                    }
-                    a:focus {
-                        color: $accent;
-                    }
-                    p {
-                        margin: 1rem 0 1rem 1rem;
-                    }
-                }
-                .socialLinks ul {
-                    margin-top: 1rem;
-                    width: 50%;
-                }
-            }
-        }
-        .footerRight {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            input,textarea {
-                font-size: calc(0.8rem + 1vw);
-                background: transparent;
-                border: none;
-                border-bottom: 1px solid $black;
-                padding: 1rem 0;
-                margin-bottom: 1rem;
-            }
-            input:focus, textarea:focus {
-                background: $accent;
-            }
-            .contactInputs {
+            .contactInfo {
+                font-size: calc(1rem + 1vw);
                 display: flex;
-                justify-content: space-between;
-                input {
-                    width: 48%;
-                }
-            }
-            textarea {
-                width: 100%;  
-            }
-            .button {
-                width: 100%;
-                display: flex;
-                align-self: flex-end;
-                position: relative;
-                button {
-                    font-size: calc(0.8rem + 1vw);
-                    text-transform: uppercase;
-                    color: $white;
-                    background: $black;
-                    border: none;
-                    border-radius: 0;
-                    padding: 0.5rem;
-                    width: 20%;
-                    align-self: flex-end;
-                    transition: all 0.5s ease;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                }
-                button:hover {
-                    color: $black;
-                    background: $accent;
-                }
-            }
-        }
-    }
-    .bottomBar {
-        color: $white;
-        background: $black;
-        width: 100%;
-        padding: 1rem 0;
-        font-size: calc(0.1rem + 1vw);
-        position: relative;
-        .wrapper {
-            display: flex;
-            justify-content: space-between;
-            .logo {
-                width: 5%;
-                img {
-                    width: 100%;
-                }
-            }
-            .homeArrow {
-                position: absolute;
-                top: -15%;
-                right: 0;
-                left: 0;
-                margin: 0 auto;
-                display: block;
-                width: 61px;
+                align-items: center;
                 a {
-                    border-radius: 50%;
-                    padding: 21px 20px 14px 20px;
-                    border: 2px solid $black;
-                    background: $white;
-                    color: $black;
+                    color: black;
                     text-decoration: none;
-                    transition: all 0.5s ease;
-                    line-height: 1;
-                    i {
-                        font-size: calc(1rem + 1vw);
-                    }
+                    transition: color 0.5s ease;
                 }
                 a:hover {
-                    color: $black;
-                    background: $accent;
-                    text-decoration: none; 
+                    color: $accent;
                 }
+                a:focus {
+                    color: $accent;
+                }
+                p {
+                    margin: 1rem 0 1rem 1rem;
+                }
+            }
+            .socialLinks ul {
+                margin-top: 1rem;
+                width: 50%;
             }
         }
     }
+    .footerRight {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        input,textarea {
+            font-size: calc(0.8rem + 1vw);
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $black;
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+            border-radius: 0;
+        }
+        input:focus, textarea:focus {
+            background: $accent;
+        }
+        .contactInputs {
+            display: flex;
+            justify-content: space-between;
+            input {
+                width: 48%;
+            }
+        }
+        textarea {
+            width: 100%;  
+        }
+        .button {
+            width: 100%;
+            display: flex;
+            align-self: flex-end;
+            position: relative;
+            button {
+                font-size: calc(0.8rem + 1vw);
+                text-transform: uppercase;
+                color: $white;
+                background: $black;
+                border: none;
+                border-radius: 0;
+                padding: 0.5rem;
+                width: 20%;
+                align-self: flex-end;
+                transition: all 0.5s ease;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            button:hover {
+                color: $black;
+                background: $accent;
+            }
+        }
+    }
+}
+.bottomBar {
+    color: $white;
+    background: $black;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: calc(0.1rem + 1vw);
+    position: relative;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            width: 5%;
+            img {
+                width: 100%;
+            }
+        }
+        .homeArrow {
+            position: absolute;
+            top: -15%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            display: block;
+            width: 61px;
+            a {
+                border-radius: 50%;
+                padding: 21px 20px 14px 20px;
+                border: 2px solid $black;
+                background: $white;
+                color: $black;
+                text-decoration: none;
+                transition: all 0.5s ease;
+                line-height: 1;
+                i {
+                    font-size: calc(1rem + 1vw);
+                }
+            }
+            a:hover {
+                color: $black;
+                background: $accent;
+                text-decoration: none; 
+            }
+        }
+    }
+}
 

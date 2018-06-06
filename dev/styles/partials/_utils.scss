@@ -7,9 +7,9 @@ html {
   font-size: 62.5%; 
   body {
       font-family: 'Source Sans Pro', sans-serif;
+      line-height: 1.6;
       color: $black;
       background: $white;
-      line-height: 1.6;
   }
 }
 
@@ -112,7 +112,6 @@ html {
       bottom: -2%;
   }
 }
-
 @media (max-height: 245px) {
   .trim1 {
     bottom: -2.2%;
@@ -121,6 +120,46 @@ html {
 @media (max-width: 500px) {
   .trim1 {
       bottom: -1.4%;
+  }
+}
+@media (max-width: 971px) {
+  .trim3 {
+      bottom: -0.3%;
+  }
+}
+@media (max-width: 866px) {
+  .trim3 {
+      bottom: -0.32%;
+  }
+}
+@media (max-width: 750px) {
+  .trim3 {
+      bottom: -0.2%;
+  }
+}
+@media (max-width: 650px) {
+  .trim3 {
+      bottom: -0.22%;
+  }
+}
+@media (max-width: 520px) {
+  .trim3 {
+      bottom: -0.24%;
+  }
+}
+@media (max-width: 440px) {
+  .trim3 {
+      bottom: -0.26%;
+  }
+}
+@media (max-width: 350px) {
+  .trim3 {
+      bottom: -0.28%;
+  }
+}
+@media (max-width: 300px) {
+  .trim3 {
+      bottom: -0.3%;
   }
 }
 

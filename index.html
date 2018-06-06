@@ -69,8 +69,7 @@
                         insatiable curiosity and a passion for lifelong learning and writing clean, organized code.</p>
                         <p>My life in short: Curious child turns French teacher then ends up working for Google where she likes the technology, so she learns lots about it and can't wait to learn more.</p>
                         <p>Interested in the long story? <span><a href="#contact">Contact me!</a></span></p>
-                        <p>Also, I'm gonna wanna know more about your dog. Or cat. Or bird. Or the chubby squirrel you saw yesterday.</p>
-                        
+                        <p>Also, I'm gonna wanna know more about your dog. Or cat. Or bird. Or the chubby squirrel you saw yesterday.</p>   
                     </div>
                 </div>
             </div>
@@ -312,10 +311,13 @@
         </div>
     </footer>
     <!-- FOOTER SECTION ENDS HERE -->
+
+    <!-- JS and juery -->
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="/public/scripts/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script>
+        //SMOOTHSCROLL
         $(function () {
             $('a').smoothScroll({
                 speed: 1000,
@@ -323,45 +325,36 @@
             });
         });
 
-    (function($) {
-
-    $.fn.visible = function(partial) {
-        
-        var $t            = $(this),
-            $w            = $(window),
-            viewTop       = $w.scrollTop(),
-            viewBottom    = viewTop + $w.height(),
-            _top          = $t.offset().top,
-            _bottom       = _top + $t.height(),
-            compareTop    = partial === true ? _bottom : _top,
-            compareBottom = partial === true ? _top : _bottom;
-        
-        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-    };
-    })(jQuery);
-
-    var win = $(window);
-
-    var allMods = $(".module");
-
-    allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-        el.addClass("already-visible"); 
-    } 
-    });
-
-    win.scroll(function(event) {
-    
-    allMods.each(function(i, el) {
-        var el = $(el);
-        if (el.visible(true)) {
-        el.addClass("come-in"); 
-        } 
-    });
-    
-    });
+        // FUNCTION FOR ELEMENTS TO SLIDE IN FROM BOTTOM ON SCROLL
+        (function($) {
+            $.fn.visible = function(partial) {   
+                var $t            = $(this),
+                    $w            = $(window),
+                    viewTop       = $w.scrollTop(),
+                    viewBottom    = viewTop + $w.height(),
+                    _top          = $t.offset().top,
+                    _bottom       = _top + $t.height(),
+                    compareTop    = partial === true ? _bottom : _top,
+                    compareBottom = partial === true ? _top : _bottom;   return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+            };
+            })(jQuery);
+            var win = $(window);
+            var allMods = $(".module");
+            allMods.each(function(i, el) {
+            var el = $(el);
+            if (el.visible(true)) {
+                el.addClass("already-visible"); 
+            } 
+            });
+            win.scroll(function(event) {
+            allMods.each(function(i, el) {
+                var el = $(el);
+                if (el.visible(true)) {
+                el.addClass("come-in"); 
+                } 
+            });      
+        });
     </script>
+    
 </body>
 </html>
